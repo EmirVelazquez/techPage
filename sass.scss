@@ -1,7 +1,11 @@
 $mainColor: rgb(43, 40, 40);
 $secondaryColor: rgb(248, 241, 241);
+$tertiaryColor: gold;
 
 body {
     background-color: $mainColor;
     color: $secondaryColor;
+    nav {
+        background-color: $tertiaryColor;
+    }
 }

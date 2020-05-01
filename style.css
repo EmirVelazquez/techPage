@@ -2,5 +2,8 @@ body {
   background-color: #2b2828;
   color: #f8f1f1;
 }
+body nav {
+  background-color: gold;
+}
 
 /*# sourceMappingURL=style.css.map */
