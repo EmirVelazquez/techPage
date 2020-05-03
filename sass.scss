@@ -24,6 +24,9 @@ body {
         display: block;
         position: relative;
         padding-bottom: 200px; /* Footer Height */
+        .main-section {
+          padding: 20px;
+        }
     }
     nav {
         background-color: $tertiaryColor !important;

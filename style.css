@@ -24,6 +24,9 @@ body #main-doc {
   padding-bottom: 200px;
   /* Footer Height */
 }
+body #main-doc .main-section {
+  padding: 20px;
+}
 body nav {
   background-color: gold !important;
   color: #2b2828 !important;
