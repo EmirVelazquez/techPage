@@ -28,6 +28,19 @@ body nav {
   background-color: gold !important;
   color: #2b2828 !important;
 }
+body nav header {
+  background-color: grey;
+  color: #2b2828 !important;
+  display: block;
+  font-weight: 500;
+  height: 48px;
+  line-height: 48px;
+  padding: 0 32px;
+}
+body nav header h1 {
+  font-size: 30px;
+  margin: 0;
+}
 body footer {
   position: absolute;
   bottom: 0;
@@ -37,12 +50,12 @@ body footer {
   background-color: gold;
   color: #2b2828;
 }
-body header, body main, body footer {
+body main, body footer {
   padding-left: 300px;
 }
 
 @media only screen and (max-width: 992px) {
-  header, main, footer {
+  main, footer {
     padding-left: 0 !important;
   }
 }
