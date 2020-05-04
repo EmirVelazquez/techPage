@@ -1,5 +1,7 @@
-$mainColor: rgb(43, 40, 40);
-$secondaryColor: rgb(248, 241, 241);
+$mainColor: #0C0C0C;
+$mainText: #CCCCCC;
+$navColor: #000000;
+$navText: #FFFFFF;
 $tertiaryColor: gold;
 
 * {
@@ -17,7 +19,7 @@ body {
 
 body {
     background-color: $mainColor;
-    color: $secondaryColor;
+    color: $mainText;
     #main-doc{
         min-height: 100vh; /* 100% of Viewport */
         overflow: hidden;
@@ -29,11 +31,10 @@ body {
         }
     }
     nav {
-        background-color: $tertiaryColor !important;
-        color: $mainColor !important;
+        background-color: $navColor !important;
         header {
-          background-color: grey;
-          color: $mainColor !important;
+          // background-color: grey;
+          color: $mainText !important;
           display: block;
           font-weight: 500;
           height: 48px;
@@ -43,6 +44,9 @@ body {
             font-size: 30px;
             margin: 0;
           }
+        }
+        .sidenav-close {
+          color: $navText;
         }
     }
     footer {

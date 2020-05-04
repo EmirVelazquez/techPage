@@ -12,8 +12,8 @@ body {
 }
 
 body {
-  background-color: #2b2828;
-  color: #f8f1f1;
+  background-color: #0C0C0C;
+  color: #CCCCCC;
 }
 body #main-doc {
   min-height: 100vh;
@@ -28,12 +28,10 @@ body #main-doc .main-section {
   padding: 20px;
 }
 body nav {
-  background-color: gold !important;
-  color: #2b2828 !important;
+  background-color: #000000 !important;
 }
 body nav header {
-  background-color: grey;
-  color: #2b2828 !important;
+  color: #CCCCCC !important;
   display: block;
   font-weight: 500;
   height: 48px;
@@ -44,6 +42,9 @@ body nav header h1 {
   font-size: 30px;
   margin: 0;
 }
+body nav .sidenav-close {
+  color: #FFFFFF;
+}
 body footer {
   position: absolute;
   bottom: 0;
@@ -51,7 +52,7 @@ body footer {
   height: 200px;
   padding: 0;
   background-color: gold;
-  color: #2b2828;
+  color: #0C0C0C;
 }
 body main, body footer {
   padding-left: 300px;
