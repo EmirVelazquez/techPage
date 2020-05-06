@@ -103,8 +103,27 @@ body {
     color: $navText;
   }
 }
+
+.material-icons {
+  background-color: $mainColor;
+  border: 1px solid $navText;
+  z-index: 10;
+  color: $navText;
+  font-size: 40px;
+  position: fixed;
+  top: 10px;
+  left: 20px;
+}
+
 @media only screen and (max-width : 992px) {
   main, footer {
     padding-left: 0 !important;
+  }
+  nav {
+    border-right: 1px solid $navText;
+  }
+  .sectionHeader {
+    text-align: end;
+    font-size: 30px !important;
   }
 }
