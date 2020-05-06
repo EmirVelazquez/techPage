@@ -1,8 +1,10 @@
 $mainColor: #0C0C0C;
 $mainText: #CCCCCC;
+$headerText: #11A10E;
 $navColor: #000000;
 $navText: #FFFFFF;
-$tertiaryColor: gold;
+$linkText: #2C96DD;
+$typeFace: 'Roboto', sans-serif;
 
 * {
     box-sizing: border-box;
@@ -20,6 +22,7 @@ body {
 body {
     background-color: $mainColor;
     color: $mainText;
+    font-family: $typeFace;
     #main-doc{
         min-height: 100vh; /* 100% of Viewport */
         overflow: hidden;
@@ -28,6 +31,33 @@ body {
         padding-bottom: 200px; /* Footer Height */
         .main-section {
           padding: 20px;
+        }
+        .anchorLinks {
+          color: $linkText;
+          margin-right: 10px;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+        .sectionHeader {
+          color: $headerText;
+          font-size: 40px;
+        }
+        #scriptTest {
+          position: fixed;
+          bottom: 0;
+          right: 5px;
+          z-index: 10;
+          width: 35px;
+          height: auto;
+          &:hover {
+            cursor: pointer;
+          }
+
+          #fccLogo {
+            width: 100%;
+            height: 100%;
+          }
         }
     }
     nav {
@@ -63,6 +93,16 @@ body {
     }
 }
 
+#fcc_test_suite_wrapper {
+  display: none;
+}
+
+.material-tooltip {
+  background-color: $navColor;
+  .tooltip-content {
+    color: $navText;
+  }
+}
 @media only screen and (max-width : 992px) {
   main, footer {
     padding-left: 0 !important;

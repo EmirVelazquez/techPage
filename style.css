@@ -14,6 +14,7 @@ body {
 body {
   background-color: #0C0C0C;
   color: #CCCCCC;
+  font-family: "Roboto", sans-serif;
 }
 body #main-doc {
   min-height: 100vh;
@@ -26,6 +27,32 @@ body #main-doc {
 }
 body #main-doc .main-section {
   padding: 20px;
+}
+body #main-doc .anchorLinks {
+  color: #2C96DD;
+  margin-right: 10px;
+}
+body #main-doc .anchorLinks:hover {
+  text-decoration: underline;
+}
+body #main-doc .sectionHeader {
+  color: #11A10E;
+  font-size: 40px;
+}
+body #main-doc #scriptTest {
+  position: fixed;
+  bottom: 0;
+  right: 5px;
+  z-index: 10;
+  width: 35px;
+  height: auto;
+}
+body #main-doc #scriptTest:hover {
+  cursor: pointer;
+}
+body #main-doc #scriptTest #fccLogo {
+  width: 100%;
+  height: 100%;
 }
 body nav {
   background-color: #000000 !important;
@@ -56,6 +83,17 @@ body footer {
 }
 body main, body footer {
   padding-left: 300px;
+}
+
+#fcc_test_suite_wrapper {
+  display: none;
+}
+
+.material-tooltip {
+  background-color: #000000;
+}
+.material-tooltip .tooltip-content {
+  color: #FFFFFF;
 }
 
 @media only screen and (max-width: 992px) {
