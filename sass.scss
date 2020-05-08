@@ -1,6 +1,8 @@
 $mainColor: #0C0C0C;
 $mainText: #CCCCCC;
 $headerText: #11A10E;
+$listText: #881783;
+$codeText: #C19C00;
 $navColor: #000000;
 $navText: #FFFFFF;
 $linkText: #2C96DD;
@@ -23,6 +25,7 @@ body {
     background-color: $mainColor;
     color: $mainText;
     font-family: $typeFace;
+    font-size: 18px;
     #main-doc{
         min-height: 100vh; /* 100% of Viewport */
         overflow: hidden;
@@ -59,6 +62,10 @@ body {
             height: 100%;
           }
         }
+        code {
+          font-family: 'Courier New', Courier, monospace;
+          color: $codeText;
+        }
     }
     nav {
         background-color: $navColor !important;
@@ -77,6 +84,9 @@ body {
         }
         .sidenav-close {
           color: $navText;
+          &:hover {
+            color: $headerText;
+          }
         }
     }
     footer {
