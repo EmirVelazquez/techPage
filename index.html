@@ -24,9 +24,9 @@
         <ul>
             <li><a href="#about" class="sidenav-close waves-effect nav-link">About</a></li>
             <div class="divider"></div>
-            <li><a href="#git_installation" class="sidenav-close waves-effect nav-link">Git Installation</a></li>
+            <li><a href="#configure_git" class="sidenav-close waves-effect nav-link">Configure Git</a></li>
             <div class="divider"></div>
-            <li><a href="#configuration_tool" class="sidenav-close waves-effect nav-link">Configuration Tool</a></li>
+            <li><a href="#clone_repositories" class="sidenav-close waves-effect nav-link">Clone Repositories</a></li>
             <div class="divider"></div>
             <li><a href="#git_branches" class="sidenav-close waves-effect nav-link">Git Branches</a></li>
             <div class="divider"></div>
@@ -41,6 +41,7 @@
             <header>
                 <h1 class="sectionHeader">About</h1>
             </header>
+            <p class="subHeading">What is this "Git" everyone keeps talking about?</p>
             <p>Git is a distributed version-control system for tracking changes in source code during
                 software
                 development. It is designed for coordinating work among programmers, but it can be used to track
@@ -66,50 +67,34 @@
                 version
                 2.
             </p>
+            <a href="https://git-scm.com/" target="_blank" rel="noopener" class="anchorLinks">Download Git</a>
             <a href="https://en.wikipedia.org/wiki/Git" target="_blank" rel="noopener" class="anchorLinks">Wikipedia
                 Page</a>
-            <a href="https://git-scm.com/" target="_blank" rel="noopener" class="anchorLinks">Download Git</a>
         </section>
-        <section class="main-section" id="git_installation">
+        <section class="main-section" id="configure_git">
             <header>
-                <h1 class="sectionHeader">Git Installation</h1>
+                <h1 class="sectionHeader">Configure Git</h1>
             </header>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas cupiditate magnam tenetur soluta
-                voluptatem
-                unde,
-                culpa sit voluptatum possimus, quae doloremque ex qui! Unde iusto nobis placeat laudantium, animi
-                aperiam!
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas cupiditate magnam tenetur soluta
-                voluptatem
-                unde,
-                culpa sit voluptatum possimus, quae doloremque ex qui! Unde iusto nobis placeat laudantium, animi
-                aperiam!
-            </p>
-            <code>$ git status</code>
+            <p class="subHeading">Learn how to configure user information on your local repositories.</p>
             <ul>
-                <li>List</li>
+                <li>Configure User Name Attached to Commits</li>
+                <code>$ git config --global user.name "[name]"</code>
+                <li>Configure Email Attached to Commits</li>
+                <code>$ git config --global user.email "[email address]"</code>
+                <li>Enable Colorization of Command Outputs</li>
+                <code>$ git config --global color.ui auto</code>
             </ul>
         </section>
-        <section class="main-section" id="configuration_tool">
+        <section class="main-section" id="clone_repositories">
             <header>
-                <h1 class="sectionHeader">Configuration Tool</h1>
+                <h1 class="sectionHeader">Clone Repositories</h1>
             </header>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas cupiditate magnam tenetur soluta
-                voluptatem
-                unde,
-                culpa sit voluptatum possimus, quae doloremque ex qui! Unde iusto nobis placeat laudantium, animi
-                aperiam!
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas cupiditate magnam tenetur soluta
-                voluptatem
-                unde,
-                culpa sit voluptatum possimus, quae doloremque ex qui! Unde iusto nobis placeat laudantium, animi
-                aperiam!
-            </p>
-            <code>$ git status</code>
+            <p class="subHeading">Learn how to download an existing repository to your local computer.</p>
             <ul>
-                <li>List</li>
+                <li>Clone A Repository with an SSH Key</li>
+                <code>$ git clone "[git@github.com:usersname/reponame.git]"</code>
+                <li>Clone A Repository with HTTPS</li>
+                <code>$ git clone "[https://github.com/usersname/reponame.git]"</code>
             </ul>
         </section>
         <section class="main-section" id="git_branches">

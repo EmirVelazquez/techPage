@@ -1,8 +1,8 @@
 $mainColor: #0C0C0C;
 $mainText: #CCCCCC;
 $headerText: #11A10E;
-$listText: #881783;
-$codeText: #C19C00;
+$subHeadingText: #ac1ea5;
+$listText: #C19C00;
 $navColor: #000000;
 $navText: #FFFFFF;
 $linkText: #2C96DD;
@@ -33,7 +33,13 @@ body {
         position: relative;
         padding-bottom: 200px; /* Footer Height */
         .main-section {
-          padding: 20px;
+          padding: 20px 50px !important;
+          margin: 0 auto;
+          ul {
+            li {
+              color: $listText;
+            }
+          }
         }
         .anchorLinks {
           color: $linkText;
@@ -45,6 +51,12 @@ body {
         .sectionHeader {
           color: $headerText;
           font-size: 40px;
+          margin-bottom: 0;
+        }
+        .subHeading {
+          color: $subHeadingText;
+          font-size: 20px;
+          margin: 0;
         }
         #scriptTest {
           position: fixed;
@@ -64,7 +76,6 @@ body {
         }
         code {
           font-family: 'Courier New', Courier, monospace;
-          color: $codeText;
         }
     }
     nav {
@@ -126,6 +137,9 @@ body {
 }
 
 @media only screen and (max-width : 992px) {
+  body {
+    font-size: 16px;
+  }
   main, footer {
     padding-left: 0 !important;
   }
@@ -135,5 +149,9 @@ body {
   .sectionHeader {
     text-align: end;
     font-size: 30px !important;
+  }
+    .subHeading {
+    text-align: end;
+    font-size: 15px !important;
   }
 }

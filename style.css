@@ -27,7 +27,11 @@ body #main-doc {
   /* Footer Height */
 }
 body #main-doc .main-section {
-  padding: 20px;
+  padding: 20px 50px !important;
+  margin: 0 auto;
+}
+body #main-doc .main-section ul li {
+  color: #C19C00;
 }
 body #main-doc .anchorLinks {
   color: #2C96DD;
@@ -39,6 +43,12 @@ body #main-doc .anchorLinks:hover {
 body #main-doc .sectionHeader {
   color: #11A10E;
   font-size: 40px;
+  margin-bottom: 0;
+}
+body #main-doc .subHeading {
+  color: #ac1ea5;
+  font-size: 20px;
+  margin: 0;
 }
 body #main-doc #scriptTest {
   position: fixed;
@@ -57,7 +67,6 @@ body #main-doc #scriptTest #fccLogo {
 }
 body #main-doc code {
   font-family: "Courier New", Courier, monospace;
-  color: #C19C00;
 }
 body nav {
   background-color: #000000 !important;
@@ -116,6 +125,10 @@ body main, body footer {
 }
 
 @media only screen and (max-width: 992px) {
+  body {
+    font-size: 16px;
+  }
+
   main, footer {
     padding-left: 0 !important;
   }
@@ -127,6 +140,11 @@ body main, body footer {
   .sectionHeader {
     text-align: end;
     font-size: 30px !important;
+  }
+
+  .subHeading {
+    text-align: end;
+    font-size: 15px !important;
   }
 }
 
