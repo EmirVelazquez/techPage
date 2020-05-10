@@ -1,11 +1,11 @@
 $mainColor: #0C0C0C;
 $mainText: #CCCCCC;
-$headerText: #11A10E;
-$subHeadingText: #ac1ea5;
-$listText: #C19C00;
+$headerText: #0DBC79;
+$subHeadingText: #BC3FBC;
+$listText: #C9DA13;
 $navColor: #000000;
 $navText: #FFFFFF;
-$linkText: #2C96DD;
+$linkText: #11A8CD;
 $typeFace: 'Roboto', sans-serif;
 
 * {
@@ -39,13 +39,18 @@ body {
             li {
               color: $listText;
             }
+            .gitStatus {
+              color: $mainText;
+              list-style-type: square;
+              margin: 0 0 10px 50px;
+            }
           }
         }
         .anchorLinks {
           color: $linkText;
           margin-right: 10px;
           &:hover {
-            text-decoration: underline;
+            text-decoration: underline overline;
           }
         }
         .sectionHeader {

@@ -28,11 +28,15 @@
             <div class="divider"></div>
             <li><a href="#clone_repositories" class="sidenav-close waves-effect nav-link">Clone Repositories</a></li>
             <div class="divider"></div>
+            <li><a href="#create_repositories" class="sidenav-close waves-effect nav-link">Create Repositories</a></li>
+            <div class="divider"></div>
             <li><a href="#git_branches" class="sidenav-close waves-effect nav-link">Git Branches</a></li>
             <div class="divider"></div>
             <li><a href="#making_changes" class="sidenav-close waves-effect nav-link">Making Changes</a></li>
             <div class="divider"></div>
             <li><a href="#redo_commits" class="sidenav-close waves-effect nav-link">Redo Commits</a></li>
+            <div class="divider"></div>
+            <li><a href="#references" class="sidenav-close waves-effect nav-link">References</a></li>
         </ul>
     </nav>
     <a href="#" data-target="navbar" class="sidenav-trigger" id="menuIcon"><i class="material-icons">menu</i></a>
@@ -90,53 +94,78 @@
                 <h1 class="sectionHeader">Clone Repositories</h1>
             </header>
             <p class="subHeading">Learn how to download an existing repository to your local computer.</p>
+            <p>Git clone is a command for downloading existing source code from a remote repository (like Github, for
+                example). In
+                other words, Git clone basically makes an identical copy of the latest version of a project in a
+                repository and saves it
+                to your computer.</p>
             <ul>
                 <li>Clone A Repository with an SSH Key</li>
-                <code>$ git clone "[git@github.com:usersname/reponame.git]"</code>
+                <code>$ git clone [SSH Key]</code>
                 <li>Clone A Repository with HTTPS</li>
-                <code>$ git clone "[https://github.com/usersname/reponame.git]"</code>
+                <code>$ git clone [URL]</code>
+            </ul>
+        </section>
+        <section class="main-section" id="create_repositories">
+            <header>
+                <h1 class="sectionHeader">Create Repositories</h1>
+            </header>
+            <p class="subHeading">Learn how to create a new repository locally.</p>
+            <p>When starting out with a new repository, you only need to do it once; either locally, then push to
+                GitHub, or by cloning
+                an existing repository.</p>
+            <ul>
+                <li>Create A New Git Repository</li>
+                <code>$ git init</code>
+                <li>Link The Local Repository To Empty GitHub Repository</li>
+                <code>$ git remote add origin [URL]</code>
+                <li>Verify The Remote Repository Was Linked</li>
+                <code>$ git remote -v</code>
             </ul>
         </section>
         <section class="main-section" id="git_branches">
             <header>
                 <h1 class="sectionHeader">Git Branches</h1>
             </header>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas cupiditate magnam tenetur soluta
-                voluptatem
-                unde,
-                culpa sit voluptatum possimus, quae doloremque ex qui! Unde iusto nobis placeat laudantium, animi
-                aperiam!
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas cupiditate magnam tenetur soluta
-                voluptatem
-                unde,
-                culpa sit voluptatum possimus, quae doloremque ex qui! Unde iusto nobis placeat laudantium, animi
-                aperiam!
-            </p>
-            <code>$ git status</code>
+            <p class="subHeading">Learn how to work with git branches.</p>
+            <p>Branches are highly important in the git world. By using branches, several developers are able to work in
+                parallel on
+                the same project simultaneously. We can use the git branch command for creating, listing and deleting
+                branches.</p>
             <ul>
-                <li>List</li>
+                <li>Create A New Local Branch</li>
+                <code>$ git branch [branch name]</code>
+                <li>Switch To The Specified Branch</li>
+                <code>$ git checkout [branch name]</code>
+                <li>Combine The Specified Branch's History Into The Current Working Branch</li>
+                <code>$ git merge [branch name]</code>
+                <li>Delete The Specified Branch</li>
+                <code>$ git branch -d [branch name]</code>
+                <li>Viewing Branches</li>
+                <code>$ git branch or $ git branch --list</code>
             </ul>
         </section>
         <section class="main-section" id="making_changes">
             <header>
                 <h1 class="sectionHeader">Making Changes</h1>
             </header>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas cupiditate magnam tenetur soluta
-                voluptatem
-                unde,
-                culpa sit voluptatum possimus, quae doloremque ex qui! Unde iusto nobis placeat laudantium, animi
-                aperiam!
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas cupiditate magnam tenetur soluta
-                voluptatem
-                unde,
-                culpa sit voluptatum possimus, quae doloremque ex qui! Unde iusto nobis placeat laudantium, animi
-                aperiam!
-            </p>
-            <code>$ git status</code>
+            <p class="subHeading">Learn how to handle and view changes on a branch.</p>
             <ul>
-                <li>List</li>
+                <li>The Most Useful Command You Can Run</li>
+                <code>$ git status</code>
+                <p>The Git status command gives us all the necessary information about the current branch:</p>
+                <ul>
+                    <li class="gitStatus">Whether the current branch is up to date.</li>
+                    <li class="gitStatus">Whether there is anything to commit, push or pull.</li>
+                    <li class="gitStatus">Whether there are files staged, unstaged or untracked.</li>
+                    <li class="gitStatus">Whether there are files created, modified or deleted.</li>
+                </ul>
+                <li>Browse & Inspect The Evolution of Project Files</li>
+                <code>$ git log</code>
+                <li>List Version History For The Current Branch</li>
+                <code>$ git log --follow [file]</code>
+                <li>List Version History For A FIle (Renames As Well)</li>
+                <code>$ git diff [first branch]...[second branch]</code>
             </ul>
         </section>
         <section class="main-section" id="redo_commits">
