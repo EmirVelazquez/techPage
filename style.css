@@ -27,7 +27,7 @@ body #main-doc {
   /* Footer Height */
 }
 body #main-doc .main-section {
-  padding: 20px 50px !important;
+  padding: 20px 60px !important;
   margin: 0 auto;
 }
 body #main-doc .main-section ul li {
@@ -37,6 +37,13 @@ body #main-doc .main-section ul .gitStatus {
   color: #CCCCCC;
   list-style-type: square;
   margin: 0 0 10px 50px;
+}
+body #main-doc .main-section .codeContainer {
+  background-color: #1E1E1E;
+  padding: 15px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 5px;
 }
 body #main-doc .anchorLinks {
   color: #11A8CD;
@@ -125,8 +132,8 @@ body main, body footer {
   color: #FFFFFF;
   font-size: 40px;
   position: fixed;
-  top: 10px;
-  left: 20px;
+  top: 5px;
+  left: 5px;
 }
 
 @media only screen and (max-width: 992px) {

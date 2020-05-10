@@ -34,7 +34,10 @@
             <div class="divider"></div>
             <li><a href="#making_changes" class="sidenav-close waves-effect nav-link">Making Changes</a></li>
             <div class="divider"></div>
-            <li><a href="#redo_commits" class="sidenav-close waves-effect nav-link">Redo Commits</a></li>
+            <li><a href="#updating_a_repository" class="sidenav-close waves-effect nav-link">Updating A Repository</a>
+            </li>
+            <div class="divider"></div>
+            <li><a href="#revert_changes" class="sidenav-close waves-effect nav-link">Revert Changes</a></li>
             <div class="divider"></div>
             <li><a href="#references" class="sidenav-close waves-effect nav-link">References</a></li>
         </ul>
@@ -82,11 +85,17 @@
             <p class="subHeading">Learn how to configure user information on your local repositories.</p>
             <ul>
                 <li>Configure User Name Attached to Commits</li>
-                <code>$ git config --global user.name "[name]"</code>
+                <div class="codeContainer">
+                    <code>$ git config --global user.name "[name]"</code>
+                </div>
                 <li>Configure Email Attached to Commits</li>
-                <code>$ git config --global user.email "[email address]"</code>
+                <div class="codeContainer">
+                    <code>$ git config --global user.email "[email address]"</code>
+                </div>
                 <li>Enable Colorization of Command Outputs</li>
-                <code>$ git config --global color.ui auto</code>
+                <div class="codeContainer">
+                    <code>$ git config --global color.ui auto</code>
+                </div>
             </ul>
         </section>
         <section class="main-section" id="clone_repositories">
@@ -101,9 +110,13 @@
                 to your computer.</p>
             <ul>
                 <li>Clone A Repository with an SSH Key</li>
-                <code>$ git clone [SSH Key]</code>
+                <div class="codeContainer">
+                    <code>$ git clone [SSH Key]</code>
+                </div>
                 <li>Clone A Repository with HTTPS</li>
-                <code>$ git clone [URL]</code>
+                <div class="codeContainer">
+                    <code>$ git clone [URL]</code>
+                </div>
             </ul>
         </section>
         <section class="main-section" id="create_repositories">
@@ -116,11 +129,17 @@
                 an existing repository.</p>
             <ul>
                 <li>Create A New Git Repository</li>
-                <code>$ git init</code>
+                <div class="codeContainer">
+                    <code>$ git init</code>
+                </div>
                 <li>Link The Local Repository To Empty GitHub Repository</li>
-                <code>$ git remote add origin [URL]</code>
+                <div class="codeContainer">
+                    <code>$ git remote add origin [URL]</code>
+                </div>
                 <li>Verify The Remote Repository Was Linked</li>
-                <code>$ git remote -v</code>
+                <div class="codeContainer">
+                    <code>$ git remote -v</code>
+                </div>
             </ul>
         </section>
         <section class="main-section" id="git_branches">
@@ -134,15 +153,25 @@
                 branches.</p>
             <ul>
                 <li>Create A New Local Branch</li>
-                <code>$ git branch [branch name]</code>
+                <div class="codeContainer">
+                    <code>$ git branch [branch name]</code>
+                </div>
                 <li>Switch To The Specified Branch</li>
-                <code>$ git checkout [branch name]</code>
+                <div class="codeContainer">
+                    <code>$ git checkout [branch name]</code>
+                </div>
                 <li>Combine The Specified Branch's History Into The Current Working Branch</li>
-                <code>$ git merge [branch name]</code>
+                <div class="codeContainer">
+                    <code>$ git merge [branch name]</code>
+                </div>
                 <li>Delete The Specified Branch</li>
-                <code>$ git branch -d [branch name]</code>
+                <div class="codeContainer">
+                    <code>$ git branch -d [branch name]</code>
+                </div>
                 <li>Viewing Branches</li>
-                <code>$ git branch or $ git branch --list</code>
+                <div class="codeContainer">
+                    <code>$ git branch or $ git branch --list</code>
+                </div>
             </ul>
         </section>
         <section class="main-section" id="making_changes">
@@ -152,7 +181,9 @@
             <p class="subHeading">Learn how to handle and view changes on a branch.</p>
             <ul>
                 <li>The Most Useful Command You Can Run</li>
-                <code>$ git status</code>
+                <div class="codeContainer">
+                    <code>$ git status</code>
+                </div>
                 <p>The Git status command gives us all the necessary information about the current branch:</p>
                 <ul>
                     <li class="gitStatus">Whether the current branch is up to date.</li>
@@ -161,16 +192,75 @@
                     <li class="gitStatus">Whether there are files created, modified or deleted.</li>
                 </ul>
                 <li>Browse & Inspect The Evolution of Project Files</li>
-                <code>$ git log</code>
+                <div class="codeContainer">
+                    <code>$ git log</code>
+                </div>
                 <li>List Version History For The Current Branch</li>
-                <code>$ git log --follow [file]</code>
+                <div class="codeContainer">
+                    <code>$ git log --follow [file]</code>
+                </div>
                 <li>List Version History For A FIle (Renames As Well)</li>
-                <code>$ git diff [first branch]...[second branch]</code>
+                <div class="codeContainer">
+                    <code>$ git diff [first branch]...[second branch]</code>
+                </div>
+                <li>Show Content Differences Between Two Branches</li>
+                <div class="codeContainer">
+                    <code>$ git show [commit]</code>
+                </div>
+                <li>Include Changes of A File Into The Next Commit</li>
+                <div class="codeContainer">
+                    <code>$ git add [file name]</code>
+                </div>
+                <li>Include Changes of Everything At Once</li>
+                <div class="codeContainer">
+                    <code>$ git add -A</code>
+                </div>
+                <li>Save Changes (One Of The Most Used Commands)</li>
+                <div class="codeContainer">
+                    <code>$ git commit -m "commit message"</code>
+                </div>
+                <p>Note: Best practice is to write a short message to explain what you have developed or changed in the
+                    source code.</p>
             </ul>
         </section>
-        <section class="main-section" id="redo_commits">
+        <section class="main-section" id="updating_a_repository">
             <header>
-                <h1 class="sectionHeader">Redo Commits</h1>
+                <h1 class="sectionHeader">Updating A Repository</h1>
+            </header>
+            <p class="subHeading">Learn how to send your changes to
+                the remote server after commiting changes.
+            </p>
+            <ul>
+                <li>Upload Commit To Remote Repository</li>
+                <div class="codeContainer">
+                    <code>$ git push [remote] [branch name] or $ git push origin [branch name]</code>
+                </div>
+                <li>Update Local Working Branch From Remote Branch</li>
+                <div class="codeContainer">
+                    <code>$ git pull [remote]</code>
+                </div>
+            </ul>
+        </section>
+        <section class="main-section" id="revert_changes">
+            <header>
+                <h1 class="sectionHeader">Revert Changes</h1>
+            </header>
+            <p class="subHeading">Learn how to undo the changes that have been made.
+            </p>
+            <ul>
+                <li>Erase Mistakes and Craft Replaceent History</li>
+                <div class="codeContainer">
+                    <code>$ git reset [commit]</code>
+                </div>
+                <li>Undo All Commits After [commit], Preserving Changes Locally</li>
+                <div class="codeContainer">
+                    <code>$ git reset --hard [commit]</code>
+                </div>
+            </ul>
+        </section>
+        <section class="main-section" id="references">
+            <header>
+                <h1 class="sectionHeader">References</h1>
             </header>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas cupiditate magnam tenetur soluta
                 voluptatem
@@ -184,10 +274,6 @@
                 culpa sit voluptatum possimus, quae doloremque ex qui! Unde iusto nobis placeat laudantium, animi
                 aperiam!
             </p>
-            <code>$ git status</code>
-            <ul>
-                <li>List</li>
-            </ul>
         </section>
         <div id="scriptTest" class="tooltipped" data-position="left" data-tooltip="Open Test Suite"><img
                 src="assets/fccLogo.png" alt="freeCodeCamp Logo" id="fccLogo"></div>

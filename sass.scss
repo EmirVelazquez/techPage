@@ -6,6 +6,7 @@ $listText: #C9DA13;
 $navColor: #000000;
 $navText: #FFFFFF;
 $linkText: #11A8CD;
+$codeBackground: #1E1E1E;
 $typeFace: 'Roboto', sans-serif;
 
 * {
@@ -33,7 +34,7 @@ body {
         position: relative;
         padding-bottom: 200px; /* Footer Height */
         .main-section {
-          padding: 20px 50px !important;
+          padding: 20px 60px !important;
           margin: 0 auto;
           ul {
             li {
@@ -44,6 +45,13 @@ body {
               list-style-type: square;
               margin: 0 0 10px 50px;
             }
+          }
+          .codeContainer {
+              background-color: $codeBackground;
+              padding: 15px;
+              border-radius: 5px;
+              display: inline-block;
+              margin-top: 5px;
           }
         }
         .anchorLinks {
@@ -137,8 +145,8 @@ body {
   color: $navText;
   font-size: 40px;
   position: fixed;
-  top: 10px;
-  left: 20px;
+  top: 5px;
+  left: 5px;
 }
 
 @media only screen and (max-width : 992px) {
