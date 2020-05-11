@@ -52,6 +52,12 @@ body #main-doc .anchorLinks {
 body #main-doc .anchorLinks:hover {
   text-decoration: underline overline;
 }
+body #main-doc .refLinks {
+  color: #11A8CD;
+}
+body #main-doc .refLinks:hover {
+  text-decoration: underline overline;
+}
 body #main-doc .sectionHeader {
   color: #0DBC79;
   font-size: 40px;

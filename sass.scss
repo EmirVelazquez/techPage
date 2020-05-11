@@ -61,6 +61,12 @@ body {
             text-decoration: underline overline;
           }
         }
+        .refLinks {
+          color: $linkText;
+          &:hover {
+            text-decoration: underline overline;
+          }
+        }
         .sectionHeader {
           color: $headerText;
           font-size: 40px;
