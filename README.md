@@ -9,3 +9,11 @@ Part of freeCodeCamp.org responsive web design curriulum requirement. Objective 
 * CSS
 * Sass
 * Materialize
+
+## Link
+
+https://emirvelazquez.github.io/techPage/
+
+## Preview
+
+![](assets/techDocPreview.gif)
