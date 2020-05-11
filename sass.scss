@@ -32,7 +32,7 @@ body {
         overflow: hidden;
         display: block;
         position: relative;
-        padding-bottom: 200px; /* Footer Height */
+        padding-bottom: 150px; /* Footer Height */
         .main-section {
           padding: 20px 60px !important;
           margin: 0 auto;
@@ -133,10 +133,38 @@ body {
         position: absolute;
         bottom: 0;
         width: 100%;
-        height: 200px;
-        padding: 0;
+        height: 150px;
         background-color: $navColor;
         color: $navText;
+        padding: 20px 60px !important;
+        #socialIcons {
+          position: absolute;
+          bottom: 50px;
+          display: flex;
+          .socialWrapper {
+            display: block;
+            margin: 0 10px 0 0;
+            border: 2px solid $navText;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            padding: 5px;
+            &:hover {
+              border: 2px solid $linkText;
+              .socialSvg {
+                fill: $linkText !important;
+              }
+            }
+            .socialSvg {
+              fill: $navText !important;
+            }
+          }
+        }
+        #copyrightContainer {
+          position: absolute;
+          bottom: 0;
+          font-size: 14px;
+        }
     }
     main, footer {
       padding-left: 300px;
@@ -169,8 +197,26 @@ body {
   body {
     font-size: 16px;
   }
-  main, footer {
+  main {
     padding-left: 0 !important;
+  }
+  footer {
+    padding: 0 !important;
+    #socialIcons, #copyrightContainer {
+      left: 50%;
+      transform: translate(-50%);
+    }
+    #socialIcons {
+      bottom: 40px !important;
+      .socialWrapper {
+        width: 35px !important;
+        height: 35px !important;
+        padding: 3px !important;
+      }
+    }
+    #copyrightContainer {
+      font-size: 12px !important;
+    }
   }
   nav {
     border-right: 1px solid $navText;
@@ -186,7 +232,7 @@ body {
     text-align: end;
     font-size: 30px !important;
   }
-    .subHeading {
+  .subHeading {
     text-align: end;
     font-size: 15px !important;
   }
