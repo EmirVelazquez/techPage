@@ -100,15 +100,24 @@ body {
     nav {
         background-color: $navColor !important;
         header {
-          // background-color: grey;
           color: $mainText !important;
           display: block;
-          font-weight: 500;
-          height: 48px;
-          line-height: 48px;
+          white-space: nowrap;
           padding: 0 32px;
+          margin: 32px 0 0 0;
+          #compCubeContainer {
+            display: inline-block;
+            width: 45px;
+            height: 45px;
+            #compCube{
+              width: 100%;
+              height: 100%;
+            }
+          }
           h1 {
+            display: inline-block;
             font-size: 30px;
+            font-weight: 700;
             margin: 0;
           }
         }
@@ -116,6 +125,7 @@ body {
           color: $navText;
           &:hover {
             color: $headerText;
+            background-color: $mainColor;
           }
         }
     }
