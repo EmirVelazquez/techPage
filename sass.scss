@@ -159,6 +159,13 @@ body {
   nav {
     border-right: 1px solid $navText;
   }
+  body{
+    #main-doc{
+      .main-section {
+        padding: 20px 50px !important;
+      }
+    }
+  }
   .sectionHeader {
     text-align: end;
     font-size: 30px !important;

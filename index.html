@@ -248,13 +248,17 @@
             <p class="subHeading">Learn how to undo the changes that have been made.
             </p>
             <ul>
-                <li>Erase Mistakes and Craft Replaceent History</li>
+                <li>Undo All Commits After [commit], Preserving Changes Locally</li>
                 <div class="codeContainer">
                     <code>$ git reset [commit]</code>
                 </div>
-                <li>Undo All Commits After [commit], Preserving Changes Locally</li>
+                <li>Discard All History & Change Back to Specified Commit</li>
                 <div class="codeContainer">
                     <code>$ git reset --hard [commit]</code>
+                </div>
+                <li>Undo Changes Made Without Touching Commit History</li>
+                <div class="codeContainer">
+                    <code>$ git revert [hash code of commit]</code>
                 </div>
             </ul>
         </section>
